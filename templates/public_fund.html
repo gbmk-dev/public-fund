@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Public Fund</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../static/css/public_fund.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
+	<!-- <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/public_fund.css') }}"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- font -->
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="../static/js/public_fund.js"></script>
+	<script data-ad-client="ca-pub-8170584643136293" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- favicon -->
+	<link rel="icon" href="../static/img/favicon.ico" type="image/ico" sizes="16x16">
+</head>
+<body>
+	<div id="first-page-scroll">
+		<div class="first-page-wrap">
+			<div class="title">
+				<h1>
+					펀드매니저 과거 수익률 추적서비스
+				</h1>
+			</div>
+			<div id="ytm-wrap">
+				<div id="ytm-search">
+					<div class="fund-name">
+						<input class="search-input" id="fund-input" type="text">
+						<div class="fund-name-search" id="fund-name-search" onclick="setfund()"></div>
+					</div>
+				</div> 
+			</div> 
+			<ul class="fund-list-group"></ul>  
+			<p>
+				현재 운영중인 펀드를 검색해보세요! <br>
+				ex). 교보, 마이다스, 골든 등
+			</p>
+		</div>
+	</div> 
+	<div id="wrap" class="wrap">
+		<div class="fund-manager-current-info-wrap">
+			<div class="current-info-box">
+				<div class="fund-info-current"></div>
+			</div> 
+		</div> 
+		<div id="fund-records-info" class="fund-records-info">
+			<div class="fund-manager-info-wrap">
+				<div class="fund-manager-name">
+					<span></span>
+				</div>
+			</div> 
+			<div class="fund-name-ytm-wrap">
+				<div class="fund-name-ytm">
+					<div class="fund-names">
+						펀드명
+					</div>
+					<div class="yield-to-maturity">
+						만기 수익률
+					</div>
+				</div>
+			</div>
+			<div class="fund-track-records-wrap"></div> 
+			<img src="../static/img/plus-btn.png" class="mobile-tablet-only">
+		</div> 
+		<div id="advertisement-wrap">
+			<div class="advertisement">
+				
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="footer-wrap">
+			<div class="dev-info-left">
+				<p>Front-end Developer : 강규빈<p>
+				<p>문의: gbmk.dev@gmail.com</p>
+			</div>
+			<div class="dev-info-right" style="padding-right: 50px;">
+				<p>Back-end Developer : 정성호</p>
+				<p>문의: sh.hoya.jeong@gmail.com</p>
+			</div>
+			<div class="dev-info-right">
+				<p>
+					정보 출처 : 금융 투자 협회
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

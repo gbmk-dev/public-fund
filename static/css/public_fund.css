@@ -1,0 +1,777 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+ul, li{
+	list-style: none;
+}
+
+#first-page-scroll{
+	width: 100%;
+	background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-page-wrap{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title{
+	margin-bottom: 50px;
+}
+.title > h1{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #ffffff;
+}
+#wrap{
+	width:100%;
+	margin:0 auto;
+	padding-bottom: 80px;
+	position: relative;
+}
+#ytm-wrap{
+	margin-bottom: 10px;
+	border-radius: 5px
+}
+#fund-lists-display{
+	padding: 5px;
+	display: none;
+
+}
+.fund-list-group{
+	height: 200px;
+	overflow: scroll;
+	margin-bottom: 0 !important;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.first-page-wrap > p{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+}
+.fund-name{
+	display: block;
+  position: relative;
+  width: 676px;
+  height: 70px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.search-input{
+	width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 85px 0 28px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}
+.fund-name-search{
+	position: absolute;
+  top: 17px;
+  right: 28px;
+  z-index: 10;
+  display: block;
+  width: 30px;
+  height: 29px;
+  box-sizing: border-box;
+  background: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.fund-manager-current-info-wrap{
+	background-color: #161616;
+  height: 124px;
+}
+.current-info-box{
+  text-align: center;
+  padding-top: 25px;
+}
+.fund-records-info{
+	margin-bottom: 100px;
+}
+.fund-info-current > p{
+	font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.fund-info-current > span{
+	margin-right: 30px;
+	font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+.fund-name-info{
+  margin-bottom: 12px !important;
+}
+.fund-manager-info-wrap{
+	height: 62px;
+}
+.fund-manager-name{
+	font-size: 22px;
+	text-align: center;
+  color: #161616;
+  line-height: 62px;
+}
+.fund-track-records-wrap{
+	width: 100%;
+	height: auto;
+}
+.fund-name-ytm-wrap{
+  background-color: #eeeeee;
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #939393;
+  border-bottom: 1px solid #939393;
+}
+.fund-name-ytm{
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #666666;
+}
+.fund-names{
+  float: left;
+}
+.yield-to-maturity{
+  float: right;
+}
+.fund-track-record{
+	width: 100%;
+  border-bottom: 1px solid #939393;
+  color: #121212;
+}
+.record-info{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 27px 0 27px 0;
+  position: relative;
+}
+.record-info-data-table-left{
+  flex: 1 1 0;
+  padding-left: 95px;
+}
+.record-info-data-table-right{
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 836px;
+  position: absolute;
+}
+.record-info > .record-info-data-table-left > p{
+	padding-bottom: 7px;
+  margin-bottom: 0 !important;
+}
+.record-info > .record-info-data-table-left > p:nth-child(2){
+  font-size: 14px;
+}
+.record-info > .record-info-data-table-left > p:last-child{
+  padding-bottom: 0 !important;
+  font-size: 14px;
+}
+.record-info > .record-info-data-table-right > p{
+	padding-bottom: 0;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+}
+.fund-name-data-table{
+  font-weight: bold;
+}
+.mobile-tablet-only{
+	display: none;
+}
+#footer{
+  background-color: #161616;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer-wrap{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 17px 0 0 95px;
+}
+.dev-info-left{
+  display: inline-block;
+  padding-right: 50px;
+  text-align: left;
+}
+.dev-info-right{
+  display: inline-block;
+  text-align: left;
+}
+
+/*----------------responsive smart phone size 1----------------*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #first-page-scroll{
+  	width: 100%;
+  	background-size: 100%;
+  	background-position: 50% 50%;
+  	background-image: url("../img/mobile_tablet_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #first-page-scroll > .first-page-wrap{
+  	position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1.3rem;
+    margin-bottom: 0;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  #first-page-scroll > .first-page-wrap > .title {
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+  .title > h1{
+  	font-size: 9vw;
+  	color: #ffffff;
+  }
+  #ytm-wrap{
+  	background-color: transparent;
+  	margin-bottom: 3vh;
+  }
+  .fund-name{
+  	width: 100%;
+  }
+  .search-input{
+  	padding: 0 85px 0 10px;
+  	color: white;
+  	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .first-page-wrap > p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vw;
+  }
+  .fund-manager-current-info-wrap {
+    padding: 4%;
+    height: auto;
+  }
+  .current-info-box{
+    padding-top: 0;
+  }
+  .fund-info-current > p{
+  	font-size: 1rem;
+  }
+  .fund-info-current span{
+  	display: inline;
+  	font-size: 0.8rem;
+  	margin-bottom: 0.5rem ;
+  }
+  .fund-records-info{
+    padding: 1.3rem;
+  }
+  .fund-manager-info-wrap{
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .fund-manager-info-wrap > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+  }
+  .fund-manager-name{
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 3vw;
+  }
+  .fund-name-ytm-wrap{
+    display: none;
+  }
+  .fund-track-records-wrap{
+    margin-bottom: 20px;
+  }
+  .fund-track-record{
+    width: 100%;
+    flex: none;
+    margin: 0 0 4% 0;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.16);
+    border-bottom: none;
+  }
+  .fund-track-record:nth-child(n+5){
+  	display: none;
+  }
+  .record-info{
+  	padding: 4%;
+  	margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .record-info-data-table-left {
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+  .mobile-tablet-only{
+  	display: block;
+  	width: 25px;
+  	height: 25px;
+  	margin: 0 auto;
+  }
+  #footer{
+    background-color: #161616;
+    font-size: 0.75em;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer-wrap{
+    width: 100%;
+    display: block;
+    padding: 1.3rem 1.3rem 0 1.3rem;
+    text-align: center; 
+  }
+  .dev-info-left{
+    display: inline-block;
+    padding-right: 0;
+    text-align: center;
+  }
+  .dev-info-right{
+    display: inline-block;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+}
+
+/*----------------responsive smart phone size 2----------------*/
+@media (min-width: 481px) and (max-width: 600px){
+  #first-page-scroll{
+    width: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-image: url("../img/mobile_tablet_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #first-page-scroll > .first-page-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1.3rem;
+    margin-bottom: 0;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  #first-page-scroll > .first-page-wrap > .title {
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+  .title > h1{
+    font-size: 6vw;
+    color: #ffffff;
+  }
+  #ytm-wrap{
+    background-color: transparent;
+    margin-bottom: 3vh;
+  }
+  .fund-name{
+    width: 100%;
+  }
+  .search-input{
+    padding: 0 85px 0 10px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .first-page-wrap > p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3vw;
+  }
+  .fund-manager-current-info-wrap {
+    padding: 4%;
+    height: auto;
+  }
+  .current-info-box{
+    padding-top: 0;
+  }
+  .fund-info-current > p{
+    font-size: 0.9rem;
+  }
+  .fund-info-current span{
+    display: inline;
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+  }
+  .fund-records-info{
+    padding: 1.3rem;
+  }
+  .fund-manager-info-wrap{
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+  }
+  .fund-manager-info-wrap > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+  }
+  .fund-manager-name{
+    font-size: 1rem;
+  }
+  .fund-name-ytm-wrap{
+    display: none;
+  }
+  .fund-track-records-wrap{
+    margin-bottom: 20px;
+  }
+  .fund-track-record{
+    width: 100%;
+    flex: none;
+    margin: 0 0 4% 0;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.16);
+    border-bottom: none;
+  }
+  .fund-track-record:nth-child(n+5){
+    display: none;
+  }
+  .record-info{
+    padding: 4%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .record-info-data-table-left {
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+  .mobile-tablet-only{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+  }
+  #footer{
+    background-color: #161616;
+    font-size: 0.75em;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer-wrap{
+    width: 100%;
+    display: block;
+    padding: 1.3rem 1.3rem 0 1.3rem;
+    text-align: center; 
+  }
+  .dev-info-left{
+    display: inline-block;
+    padding-right: 0;
+    text-align: center;
+  }
+  .dev-info-right{
+    display: inline-block;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+}
+
+/*----------------responsive tablet size 1----------------*/
+@media (min-width: 601px) and (max-width: 768px){
+  #first-page-scroll{
+  	width: 100%;
+  	background-size: 100%;
+  	background-image: url("../img/mobile_tablet_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #first-page-scroll > .first-page-wrap{
+  	position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1.3rem;
+    margin-bottom: 0;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  #first-page-scroll > .first-page-wrap > .title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .title > h1{
+  	font-size: 6vw;
+  	color: #ffffff;
+  }
+  #ytm-wrap{
+  	background-color: transparent;
+  }
+  .fund-name{
+  	width: 100%;
+  }
+  .search-input{
+  	padding: 0 85px 0 10px;
+  	color: white;
+  	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .first-page-wrap > p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .fund-manager-current-info-wrap {
+    padding: 3%;
+    height: auto;
+  }
+  .current-info-box{
+    padding-top: 0;
+  }
+  .fund-info-current > p{
+  	font-size: 1.1rem;
+  }
+  .fund-info-current span{
+  	display: inline;
+  	font-size: 0.9rem;
+  	margin-right: 0.5rem ;
+  }
+  .fund-manager-info-wrap{
+  	padding: 1%;
+  }
+  .fund-manager-info-wrap > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+  }
+  .fund-manager-name {
+    font-size: 1rem;
+    line-height: 50px;
+  }
+  .fund-name-ytm{
+    max-width: 75vw;
+  }
+  .fund-track-records-wrap{
+    margin-bottom: 20px;
+  }
+  .fund-track-record{
+    width: 100%;
+    border-bottom: 1px solid #939393;
+    color: #121212;
+  }
+  .fund-track-record:nth-child(n+5){
+    display: none;
+  }
+  .record-info{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 27px 0 27px 0;
+    position: relative;
+  }
+  .record-info-data-table-left{
+    padding-left: 12vw;
+  }
+  .record-info-data-table-right{
+    margin-left: 79vw;
+  }
+  .record-info > .record-info-data-table-left > p{
+    padding-bottom: 7px;
+    margin-bottom: 0 !important;
+  }
+  .record-info > .record-info-data-table-left > p:nth-child(2){
+    font-size: 14px;
+  }
+  .record-info > .record-info-data-table-left > p:last-child{
+    padding-bottom: 0 !important;
+    font-size: 14px;
+  }
+  .record-info > .record-info-data-table-right > p{
+    padding-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+  }
+  .fund-name-data-table{
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .mobile-tablet-only{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+  }
+  #footer{
+    background-color: #161616;
+    font-size: 0.75em;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer-wrap{
+    width: 100%;
+    display: flex;
+    padding: 1.3rem 1.3rem 0 1.3rem;
+    text-align: left; 
+  }
+  .dev-info-left{
+    display: inline-block;
+    padding-right: 5vw;
+    text-align: left;
+  }
+  .dev-info-right{
+    display: inline-block;
+    padding-right: 5vw !important;
+    text-align: left;
+  }
+}
+
+/*----------------responsive tablet size 2----------------*/
+@media (min-width: 769px) and (max-width: 900px){
+  #first-page-scroll{
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../img/mobile_tablet_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #first-page-scroll > .first-page-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1.3rem;
+    margin-bottom: 0;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  #first-page-scroll > .first-page-wrap > .title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .title > h1{
+    font-size: 6vw;
+    color: #ffffff;
+  }
+  #ytm-wrap{
+    background-color: transparent;
+  }
+  .fund-name{
+    width: 100%;
+  }
+  .search-input{
+    padding: 0 85px 0 10px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .first-page-wrap > p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .fund-manager-current-info-wrap {
+    padding: 3%;
+    height: auto;
+  }
+  .current-info-box{
+    padding-top: 0;
+  }
+  .fund-info-current > p{
+    font-size: 1.1rem;
+  }
+  .fund-info-current span{
+    display: inline;
+    font-size: 0.9rem;
+    margin-right: 0.5rem ;
+  }
+  .fund-manager-info-wrap{
+    padding: 1%;
+  }
+  .fund-manager-info-wrap > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+  }
+  .fund-manager-name {
+    font-size: 1rem;
+    line-height: 50px;
+  }
+  .fund-name-ytm{
+    max-width: 75vw;
+  }
+  .fund-track-records-wrap{
+    margin-bottom: 20px;
+  }
+  .fund-track-record{
+    width: 100%;
+    border-bottom: 1px solid #939393;
+    color: #121212;
+  }
+  .fund-track-record:nth-child(n+5){
+    display: none;
+  }
+  .record-info{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 27px 0 27px 0;
+    position: relative;
+  }
+  .record-info-data-table-left{
+    padding-left: 12vw;
+  }
+  .record-info-data-table-right{
+    margin-left: 79vw;
+  }
+  .record-info > .record-info-data-table-left > p{
+    padding-bottom: 7px;
+    margin-bottom: 0 !important;
+  }
+  .record-info > .record-info-data-table-left > p:nth-child(2){
+    font-size: 14px;
+  }
+  .record-info > .record-info-data-table-left > p:last-child{
+    padding-bottom: 0 !important;
+    font-size: 14px;
+  }
+  .record-info > .record-info-data-table-right > p{
+    padding-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+  }
+  .fund-name-data-table{
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .mobile-tablet-only{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+  }
+  #footer{
+    background-color: #161616;
+    font-size: 0.75em;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer-wrap{
+    width: 100%;
+    display: flex;
+    padding: 1.3rem 1.3rem 0 1.3rem;
+    text-align: left; 
+  }
+  .dev-info-left{
+    display: inline-block;
+    padding-right: 5vw;
+    text-align: left;
+  }
+  .dev-info-right{
+    display: inline-block;
+    padding-right: 5vw !important;
+    text-align: left;
+  }
+}
